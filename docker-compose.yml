@@ -1,0 +1,10 @@
+version: '3'
+services:
+  todo:
+    build: ./backend
+  # frontend:
+  #   build: ./frontend
+  #   ports:
+  #     - "8000:8000"
+  #   environment:
+  #     - BACKEND_URL=http://todo:5000
