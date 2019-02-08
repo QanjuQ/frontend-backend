@@ -1,0 +1,27 @@
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+#gradle
+.gradle
+
+# IntelliJ
+.idea
+*.iws
+*.ipr
+
+# Mac OS
+.DS_Store
+
+# Package Files #
+*.jar
+*.tar.gz
+*.tar
+*.iml
+
+# Build output
+*/build
+*/results
+*/out/*
