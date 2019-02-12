@@ -1,6 +1,12 @@
 # Compiled class file
 *.class
 
+backend/bin
+backend/.classpath
+backend/.project
+backend/.settings/org.eclipse.buildship.core.prefs
+backend/.settings/org.eclipse.jdt.core.prefs
+
 # Log file
 *.log
 
@@ -26,3 +32,4 @@
 */results
 */out/*
 /backend/gradle*
+/frontend/node_modules/
