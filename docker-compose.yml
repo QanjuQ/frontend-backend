@@ -2,6 +2,10 @@ version: '3'
 services:
   todo:
     build: ./backend
+    depends_on:
+      - todo_db
+    environment:
+      - DB_URL=postgresql://todo_db/postgres:5432
 
   frontend:
     build: ./frontend
@@ -11,3 +15,11 @@ services:
       - "8000:8000"
     environment:
       - BACKEND_URL=http://todo:5000
+
+  todo_db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: todo
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root

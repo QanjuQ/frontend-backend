@@ -1,7 +1,7 @@
 FROM gradle as builder
 WORKDIR /home/gradle/src
 COPY --chown=gradle:gradle . ./
-RUN gradle build --continuous --quiet
+#RUN gradle build --continuous --quiet
 RUN gradle build
 EXPOSE 8080
 
